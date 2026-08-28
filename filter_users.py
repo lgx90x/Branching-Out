@@ -43,8 +43,8 @@ if __name__ == "__main__":
         filter_users_by_email(name_to_search)
 
     elif filter_option == "age":
-        name_to_search = input("Enter an age to filter users: ").strip()
-        filter_users_by_email(name_to_search)
+        name_to_search = int(input("Enter an age to filter users: ").strip())
+        filter_users_by_age(name_to_search)
 
     else:
         print("Please enter a filter that is supported: name, email or age.")
